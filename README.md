@@ -90,9 +90,11 @@ This is why privacy and security are core architectural concerns, not add-ons.
 
 Core feature (ii) Calls
 
+
 **Key Feature: (iii) Messaging**
 
 This feature involves sending and receiving of text, audios, images, videos, and documents.
+
 
 **Software components likely involved;**
 
@@ -104,8 +106,11 @@ Network/APIs: Message transmission via WhatsApp servers
 
 Data Storage: Local message cache and cloud backups
 
+
 **Whether the feature requires internet connectivity**
+
 Yes, internet is required for sending and receiving messages.
 
 **What might happen if the network is slow or unavailable**
+
 Messages may remain unsent, show pending status, or be delivered late once connectivity is restored.
