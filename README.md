@@ -1,5 +1,8 @@
 # Software-Construction-Group-Tech
 
+# App Selection
+App Selected: WhatsApp
+
 # Part A: Understanding the App
   1. App Overview
   (a) What problem does this app solve ?
@@ -8,10 +11,14 @@
 
 (b) Who are its primary users ?
 
+(i) Individuals communicating with friends and family
+(ii) Students and educations for coordination and collaboration
+(iii) Businesses and organizations for customer engagement
+(iv) Communities and groups requiring real-time communication
 
   2. Core Features
       (i) Privacy and Security
-
+      (ii) Calls
 
 
 
@@ -20,7 +27,7 @@
 
 # Part B : Thinking Behind the Scenes
    
- Core Feature: Privacy and Security
+ Core Feature: (i) Privacy and Security
 Privacy and security in WhatsApp are not “settings”; they are system-wide design decisions that affect almost every part of the application.
    
 1. User Interface (UI)
@@ -78,5 +85,8 @@ Engineering Perspective (Why This Is Hard)
 - Security features must work across billions of devices
 - Any bug can compromise user trust globally
 - Strong security must exist without hurting usability
-
 This is why privacy and security are core architectural concerns, not add-ons.
+
+Core feature (ii) Calls
+
+
