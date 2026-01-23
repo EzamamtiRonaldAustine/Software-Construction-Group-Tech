@@ -192,3 +192,19 @@ WhatsApp uses end-to-end encryption, meaning:
 - Servers must relay messages without reading them
 
 Any security flaw can break user trust globally and expose private conversations.
+
+3. Testing Across Devices and OS Versions
+WhatsApp runs on:
+- Thousands of Android device models
+- Different iOS versions
+- Devices with very different memory, CPU power, and screen sizes
+
+A feature that works on a high-end phone may crash or freeze on a low-end device.
+
+4. Backward Compatibility: Millions of users do not update their apps regularly.
+New updates must still:
+- Communicate correctly with older app versions
+- Support older message formats and protocols
+- Avoid breaking chats or media history
+
+Engineers must maintain support for old behavior while adding new features.
