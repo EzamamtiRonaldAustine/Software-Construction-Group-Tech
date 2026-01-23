@@ -378,9 +378,9 @@ Core Feature worked on: Privacy And Security and answered Part B of the assignme
 He also worked on Part D of the assignment where I briefly talked about the following engineering challenges: Performance and Scalability, Security and Data Privacy, Testing Across Devices and OS Versions & Backward Compatibility 
 and attempted a question of part E of the assignment.
 
-**Name:**  Najjuma Teopista
-**Reg No:**  S23B23/041
-**Access Number:**  B24271 
+**Name:** Najjuma  
+**Reg No:** 
+**Access Number:**  
 Contributions:  
 
 
