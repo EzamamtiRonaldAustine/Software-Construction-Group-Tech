@@ -97,6 +97,7 @@ Engineering Perspective (Why This Is Hard)
 This is why privacy and security are core architectural concerns, not add-ons.
 
 
+<<<<<<< HEAD
 **Key Feature:(ii) Calls (Voice and Video)**
 
 This feature allows users to communicate with one another in real time through voice and video calls using an internet co*nnection, providing a cost-effective alternative to traditional phone calls.
@@ -271,3 +272,5 @@ WhatsApp uses end-to-end encryption, meaning:
 - Servers must relay messages without reading them
 
 Any security flaw can break user trust globally and expose private conversations.
+=======
+>>>>>>> 6533696 (Remove voice and video call feature details from README)
