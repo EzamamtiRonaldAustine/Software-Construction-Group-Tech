@@ -88,13 +88,6 @@ What Happens If the Network Is Slow or Unavailable?
 
 Importantly, security is not reduced due to poor network conditions — only delivery is affected.
 
-Engineering Perspective (Why This Is Hard)
-- Encryption must be fast enough to not slow down messaging
-- Security features must work across billions of devices
-- Any bug can compromise user trust globally
-- Strong security must exist without hurting usability
-This is why privacy and security are core architectural concerns, not add-ons.
-
 Core feature (ii) Calls
 
 
@@ -262,3 +255,18 @@ New updates must still:
 - Avoid breaking chats or media history
 
 Engineers must maintain support for old behavior while adding new features.
+
+Part E: Group Reflection
+1. What surprised your group most about the complexity behind this app?
+    What surprised our group most is how much invisible work happens just to send a simple message. As users, we thought WhatsApp only sends text from one phone to another. But when we analyzed it, we realized there are many things happening in the background like encryption, servers handling delivery, message storage, syncing across devices, and handling poor networks.
+
+
+2. Why is writing “working code” not enough for software systems at this scale?
+  - Code must survive scale, not just run correctly:
+A feature that works for 100 users can collapse under millions of concurrent users. Engineers must think about performance, load handling, latency, and fault tolerance. “It works on my device” is meaningless if the system slows down or crashes under real-world traffic.
+
+  - Code must be maintainable and evolvable by teams:
+Large systems are built and modified by many engineers over years. If code is hard to read, tightly coupled, or poorly structured, every new change risks breaking existing functionality. Software at this scale must be written for future engineers, not just to pass today’s test.
+         
+
+
