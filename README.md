@@ -28,10 +28,8 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
   2. Core Features:
       (i) Privacy and Security
       (ii) Calls
-
-
-
-
+      (iii) Messaging 
+      (iv) Search (Chat and Message Search)
 
 
 # Part B : Thinking Behind the Scenes
@@ -123,34 +121,6 @@ Yes, an active internet connection, either through mobile data or Wi-Fi, is requ
 
 If the network is slow, call quality may be reduced, resulting in delays, poor audio clarity, or interrupted video. If the network is unavailable, calls may fail to connect or may be disconnected unexpectedly.
 
-
-
-<<<<<<< HEAD
-**Key Feature:(ii) Calls (Voice and Video)**
-
-This feature allows users to communicate with one another in real time through voice and video calls using an internet co*nnection, providing a cost-effective alternative to traditional phone calls.
-
-**Software components likely involved;**
-
-User Interface (UI):
-It includes call screens that display the caller information, call duration, and connection status. It also provides interactive controls such as mute, speaker, camera toggle, and end-call buttons to allow users to manage the call easily.
-
-Business Logic:
-It is responsible for initiating and ending calls, managing call states (ringing, connected, ended), authenticating users, and dynamically adjusting audio and video quality based on available network conditions. It also ensures that calls are encrypted to maintain privacy.
-
-Network / APIs:
-WhatsApp Calls rely on internet-based communication protocols and APIs to establish call connections, handle signaling, and transmit voice and video data securely through WhatsApp servers.
-
-Data Storage:
-Only minimal data is stored, mainly call logs such as timestamps and contact details. The actual voice or video content is not stored, supporting end-to-end encryption and user privacy.
-
-**Whether the feature requires internet connectivity**
-
-Yes, an active internet connection, either through mobile data or Wi-Fi, is required for WhatsApp Calls to function.
-
-**What might happen if the network is slow or unavailable**
-
-If the network is slow, call quality may be reduced, resulting in delays, poor audio clarity, or interrupted video. If the network is unavailable, calls may fail to connect or may be disconnected unexpectedly.
 
 Core Feature: (iii) Messaging
 
@@ -324,5 +294,11 @@ WhatsApp uses end-to-end encryption, meaning:
 - Servers must relay messages without reading them
 
 Any security flaw can break user trust globally and expose private conversations.
-=======
->>>>>>> 6533696 (Remove voice and video call feature details from README)
+
+
+# Part E: Group Reflection
+
+3. What did you learn about teamwork from this exercise?
+
+From this exercise, we learned that teamwork is important because different people have different experiences and perspectives of applications which enabled us to notice different things. Working together helped us understand the app better, share ideas, and divide tasks so the work was done faster and more accurately.
+
