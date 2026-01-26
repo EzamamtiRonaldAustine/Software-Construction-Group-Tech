@@ -27,7 +27,7 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
 
   2. Core Features:
       (i) Privacy and Security
-      (ii) Calls (Voice and Video)
+      (ii) Calls
       (iii) Messaging
 
 
@@ -97,7 +97,7 @@ Engineering Perspective (Why This Is Hard)
 - Strong security must exist without hurting usability
 This is why privacy and security are core architectural concerns, not add-ons.
 
-
+Core feature (ii) Calls
 
 
 **Key Feature: (iii) Messaging**
@@ -382,6 +382,7 @@ and attempted a question of part E of the assignment.
 **Reg No:** 
 **Access Number:**  
 Contributions:  
+Serving as the App Analyst, she contributed to multiple sections of the project. In Part A (Question 2), she identified and analysed the app’s primary users. In Part B, she supported the identification of the app’s core features and also worked on the Calls (Voice and Video) feature, examining its software components, internet connectivity requirements, and behaviour under slow or unavailable network conditions. Additionally, she contributed to Part C: Change and Maintainability (Question 3) by analysing why the selected change would be difficult to implement.
 
 
 **Name:** Ezamamti Ronald Austine 
