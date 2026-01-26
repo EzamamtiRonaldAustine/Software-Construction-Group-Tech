@@ -30,6 +30,8 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
       (ii) Calls
       (iii) Messaging 
       (iv) Search (Chat and Message Search)
+      (v) Group Chats and Group Management
+
 
 
 # Part B : Thinking Behind the Scenes
@@ -185,6 +187,55 @@ What might happen if the network is slow or unavailable
 
   -For slow network, local search remains fast, but external search or AI responses may be delayed or fail to load
 
+Core Feature: (v) Group Chats and Group Management
+
+Group chats allow multiple users to communicate within a shared conversation. Group management includes adding and removing members, assigning administrators, controlling permissions, and managing group information such as the group name and profile photo. Although simple to users, this feature requires complex coordination behind the scenes.
+
+Software components likely involved;
+
+User Interface (UI):
+- Group chat screen displaying messages from all members
+- Group info screen showing group name, description, profile picture, and participant list
+- Admin controls for adding/removing members and promoting or demoting admins
+- Group invite links or QR codes for joining
+- System messages showing join, leave, or removal events
+
+Business Logic:
+- Group membership management (tracking members and admin roles)
+- Permission enforcement (who can send messages or edit group info)
+- Message fan-out logic to deliver one message to all group members
+- Message ordering and duplication prevention
+- Moderation logic such as removing users or revoking invite links
+- Encryption key management when members join or leave the group
+
+Network / APIs:
+- APIs to create groups and update group information
+- APIs to add or remove participants
+- Group message delivery APIs
+- Invite link generation and validation APIs
+- Push notifications for group messages and events
+
+Data Storage:
+- Encrypted local storage of group messages and metadata
+- Participant lists and admin roles
+- Message delivery and read receipts
+- Media references and cached files
+
+Whether the feature requires internet connectivity
+
+Yes, internet connectivity is required for:
+- Sending and receiving group messages
+- Adding or removing members
+- Updating group settings
+- Joining via invite links
+
+What might happen if the network is slow or unavailable
+
+- Messages may remain pending and be delivered later
+- Media uploads may fail or take longer
+- Group updates (member changes) may not appear immediately
+- Users can still read previously downloaded messages while offline
+
 
 # Part C: Change and Maintainability
 
@@ -304,6 +355,11 @@ New updates must still:
 
 Engineers must maintain support for old behavior while adding new features.
 
+5. Group Management Complexity and Moderation
+
+Managing group chats at scale is challenging because a single action (like sending a message or removing a member) affects many users simultaneously. Engineers must ensure that permissions are enforced correctly, messages are delivered reliably, and encryption keys are updated securely when group membership changes. Poor handling of these issues could lead to privacy breaches, message inconsistency, or abuse within groups.
+
+
 Part E: Group Reflection
 1. What surprised your group most about the complexity behind this app?
     What surprised our group most is how much invisible work happens just to send a simple message. As users, we thought WhatsApp only sends text from one phone to another. But when we analyzed it, we realized there are many things happening in the background like encryption, servers handling delivery, message storage, syncing across devices, and handling poor networks.
@@ -320,4 +376,9 @@ Large systems are built and modified by many engineers over years. If code is ha
 3. What did you learn about teamwork from this exercise?
 
 From this exercise, we learned that teamwork is important because different people have different experiences and perspectives of applications which enabled us to notice different things. Working together helped us understand the app better, share ideas, and divide tasks so the work was done faster and more accurately.
+
+4. What did you personally learn from working on Group Chats and Group Management?
+
+Working on group chats helped me understand that features involving multiple users are much more complex than one-to-one communication. I learned that group messaging requires careful handling of permissions, message delivery to many users, synchronization across devices, and strong security controls. This showed me that software design must consider scalability, reliability, and user behavior, not just basic functionality.
+
 
