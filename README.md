@@ -30,6 +30,9 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
       (ii) Calls
       (iii) Messaging 
       (iv) Search (Chat and Message Search)
+      (v) Meta AI (AI-powered Assistance and Smart Features)
+
+
 
 
 # Part B : Thinking Behind the Scenes
@@ -185,6 +188,52 @@ What might happen if the network is slow or unavailable
 
   -For slow network, local search remains fast, but external search or AI responses may be delayed or fail to load
 
+Core Feature: (v) Meta AI (AI-powered Assistance and Smart Features)
+
+Meta AI is an artificial intelligence feature integrated into WhatsApp to assist users with tasks such as answering questions, generating text, summarizing chats, translating messages, and providing general information directly within the app. This feature enhances user experience by offering intelligent assistance without leaving WhatsApp.
+
+Software components likely involved;
+
+User Interface (UI):
+- Meta AI chat interface within WhatsApp
+- Input field for user prompts and questions
+- Display area for AI-generated responses
+- Option to copy, share, or insert AI responses into chats
+- Indicators showing AI is processing a request
+
+Business Logic:
+- Prompt handling and validation
+- Context processing to understand user input
+- AI response generation using large language models
+- Safety and content moderation logic to prevent harmful or inappropriate responses
+- Rate limiting and usage control to prevent abuse
+- Integration logic between WhatsApp chats and Meta AI services
+
+Network / APIs:
+- APIs to send user prompts to Meta AI servers
+- AI inference APIs for generating responses
+- Content filtering and moderation APIs
+- Logging and monitoring APIs for performance and reliability
+
+Data Storage:
+- Temporary storage of user prompts and AI responses
+- Metadata for usage analytics (timestamps, response times)
+- Cached AI responses (where applicable)
+- No permanent storage of private chat content for AI training
+
+Whether the feature requires internet connectivity
+
+Yes, Meta AI requires an active internet connection to:
+- Send prompts to AI servers
+- Generate responses
+- Perform translations, summaries, and intelligent suggestions
+
+What might happen if the network is slow or unavailable
+
+- AI responses may take longer to appear
+- Requests may fail or time out
+- Meta AI features become unavailable when offline
+- Users can continue using normal messaging features without AI assistance
 
 # Part C: Change and Maintainability
 
@@ -304,6 +353,11 @@ New updates must still:
 
 Engineers must maintain support for old behavior while adding new features.
 
+5. AI Integration and Ethical Challenges
+
+Integrating Meta AI into WhatsApp introduces challenges related to accuracy, bias, and ethical use of artificial intelligence. Engineers must ensure that AI-generated responses are reliable, safe, and do not spread misinformation. In addition, AI systems require high computational resources and careful monitoring to maintain performance while respecting user privacy and data protection regulations.
+
+
 Part E: Group Reflection
 1. What surprised your group most about the complexity behind this app?
     What surprised our group most is how much invisible work happens just to send a simple message. As users, we thought WhatsApp only sends text from one phone to another. But when we analyzed it, we realized there are many things happening in the background like encryption, servers handling delivery, message storage, syncing across devices, and handling poor networks.
@@ -320,6 +374,11 @@ Large systems are built and modified by many engineers over years. If code is ha
 3. What did you learn about teamwork from this exercise?
 
 From this exercise, we learned that teamwork is important because different people have different experiences and perspectives of applications which enabled us to notice different things. Working together helped us understand the app better, share ideas, and divide tasks so the work was done faster and more accurately.
+4. What did you personally learn from analyzing Meta AI in WhatsApp?
+
+From analyzing Meta AI, I learned that adding artificial intelligence to an application is not just about smart answers, but also about responsibility. AI features require strong moderation, ethical considerations, high-performance infrastructure, and privacy protection. This helped me understand that intelligent systems must be carefully designed to support users without causing harm or misuse.
+
+
 
  From this exercise, we learned that teamwork in software development is not just about dividing work, but about coordinating how everyone’s work fits together.
      While working with branches and pull requests, we realized that if one person makes changes without following the agreed rules, it can easily affect other people’s work. we also learned that communication is very important, because you need to know what others have changed before you add your part. Additionally, this exercise showed us that version control is not only a tool for saving code, but also a way for a team to work in an organized manner without causing conflicts.
