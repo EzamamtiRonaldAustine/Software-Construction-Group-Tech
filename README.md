@@ -327,6 +327,7 @@ From this exercise, we learned that teamwork is important because different peop
 # Group Contributions
 Name : Tendo Calvin
 Reg no: S23B23/013
+Access no: B24247
 Contributions: Core Feature worked on: Privacy And Security and answered Part B of the assignment based off the core feature I chose to work on. I also worked on Part D of the assignment where I briefly talked about the following engineering challenges: Performance and Scalability, Security and Data Privacy, Testing Across Devices and OS Versions & Backward Compatibility and lastly I also attempted all questions of part E of the assignment.
 
 
