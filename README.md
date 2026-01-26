@@ -27,7 +27,7 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
 
   2. Core Features:
       (i) Privacy and Security
-      (ii) Calls (Voice and Video)
+      (ii) Calls
       (iii) Messaging
 
 
@@ -97,7 +97,7 @@ Engineering Perspective (Why This Is Hard)
 - Strong security must exist without hurting usability
 This is why privacy and security are core architectural concerns, not add-ons.
 
-
+Core feature (ii) Calls
 
 
 **Key Feature: (iii) Messaging**
@@ -344,7 +344,7 @@ Engineers must ensure that AI features:
 
 AI systems also require high computational resources and continuous monitoring, making it challenging to maintain performance, scalability, and user trust while introducing intelligent features.
 
-Part E: Group Reflection
+**Part E: Group Reflection**
 1. What surprised your group most about the complexity behind this app?
 
 Besides much of the invisible work that happens, behind what appears to be a simple action—sending a message. People/we tend to view WhatsApp as a basic text-sending application. 
@@ -378,19 +378,10 @@ Core Feature worked on: Privacy And Security and answered Part B of the assignme
 He also worked on Part D of the assignment where I briefly talked about the following engineering challenges: Performance and Scalability, Security and Data Privacy, Testing Across Devices and OS Versions & Backward Compatibility 
 and attempted a question of part E of the assignment.
 
-**Name:** Najjuma Teopista
-**Reg No:** 
-**Access Number:**  
+**Name:**  Najjuma Teopista
+**Reg No:**  S23B23/041
+**Access Number:**  B24271 
 Contributions:  
-
-
-**Name:** Kiisa Angela  
-**Reg No:** S23B23/027
-**Access Number:**  B24258
-Contributions:  
-Analyzed the messaging feature in Part B, identifying relevant UI elements, business logic, network/API interactions, data persistence, and expected behavior under poor connectivity.
-Contributed to Part C by evaluating system components affected by the proposed change scenario and identifying potential feature breaks.
-Assisted with the group reflection in Part E by summarizing key teamwork lessons learnt from collaborating.
 
 
 **Name:** Ezamamti Ronald Austine 
