@@ -28,6 +28,7 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
   2. Core Features:
       (i) Privacy and Security
       (ii) Calls(Voice and Video)
+
       (iii) Messaging
 
 
@@ -97,9 +98,7 @@ Engineering Perspective (Why This Is Hard)
 - Strong security must exist without hurting usability
 This is why privacy and security are core architectural concerns, not add-ons.
 
-<<<<<<< HEAD
 
-=======
 **Core Feature (ii) Calls(Voice and Video)**
 
 This feature allows users to communicate with one another in real time through voice and video calls using an internet connection, providing a cost-effective alternative to traditional phone calls.
@@ -121,7 +120,6 @@ Yes, an active internet connection, either through mobile data or Wi-Fi, is requ
 **What might happen if the network is slow or unavailable**
 
 If the network is slow, call quality may be reduced, resulting in delays, poor audio clarity, or interrupted video. If the network is unavailable, calls may fail to connect or may be disconnected unexpectedly.
->>>>>>> ebff095 (added my contribution, resolved some conflicts that were created from the main,  put back the calls features)
 
 
 **Key Feature: (iii) Messaging**
@@ -428,3 +426,4 @@ Contributions:
 He focused on the **Meta AI** core feature within WhatsApp. He analyzed how artificial intelligence is integrated into the application and contributed to **Part B** by examining the software components involved in AI-powered assistance, including user interaction, backend logic, network dependency, and privacy considerations.
 In addition, he contributed to **Part D** by addressing **AI Integration and Ethical Challenges**. Through this analysis, he highlighted that integrating AI is not only about generating intelligent responses but also about responsibility. 
 His contribution emphasized the need for strong moderation, ethical design, high-performance infrastructure, and strict privacy protection to ensure that AI features support users without causing harm, misuse, or misinformation.
+
