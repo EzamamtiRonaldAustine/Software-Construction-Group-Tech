@@ -28,9 +28,8 @@ Today, WhatsApp solves the broader problem of secure, scalable, and low-cost glo
   2. Core Features:
       (i) Privacy and Security
       (ii) Calls
-      (iii) Messaging
+      (iii) Messaging 
       (iv) Search (Chat and Message Search)
-
 
 
 # Part B : Thinking Behind the Scenes
@@ -88,7 +87,32 @@ What Happens If the Network Is Slow or Unavailable?
 
 Importantly, security is not reduced due to poor network conditions — only delivery is affected.
 
-Core feature (ii) Calls
+
+**Core Feature:(ii) Calls (Voice and Video)**
+
+This feature allows users to communicate with one another in real time through voice and video calls using an internet connection, providing a cost-effective alternative to traditional phone calls.
+
+**Software components likely involved;**
+
+User Interface (UI):
+It includes call screens that display the caller information, call duration, and connection status. It also provides interactive controls such as mute, speaker, camera toggle, and end-call buttons to allow users to manage the call easily.
+
+Business Logic:
+It is responsible for initiating and ending calls, managing call states (ringing, connected, ended), authenticating users, and dynamically adjusting audio and video quality based on available network conditions. It also ensures that calls are encrypted to maintain privacy.
+
+Network / APIs:
+WhatsApp Calls rely on internet-based communication protocols and APIs to establish call connections, handle signaling, and transmit voice and video data securely through WhatsApp servers.
+
+Data Storage:
+Only minimal data is stored, mainly call logs such as timestamps and contact details. The actual voice or video content is not stored, supporting end-to-end encryption and user privacy.
+
+**Whether the feature requires internet connectivity**
+
+Yes, an active internet connection, either through mobile data or Wi-Fi, is required for WhatsApp Calls to function.
+
+**What might happen if the network is slow or unavailable**
+
+If the network is slow, call quality may be reduced, resulting in delays, poor audio clarity, or interrupted video. If the network is unavailable, calls may fail to connect or may be disconnected unexpectedly.
 
 
 Core Feature: (iii) Messaging
@@ -115,37 +139,37 @@ Yes, internet is required for sending and receiving messages.
 
 Messages may remain unsent, show pending status, or be delivered late once connectivity is restored.
 
-Core Feature:(iv) Search (Chat and Message Search)
+Core Feature: (iv) Search (Chat and Message Search)
 
 Search is a core feature of WhatsApp that allows users to quickly locate messages, media, contacts, and group chats. It helps users retrieve past conversations without manually scrolling through long chat histories, improving usability and efficiency, especially for active users with many chats.
 
-  1.User Interface (UI):
+  1.User Interface (UI): 
 
-    -Search bar available on the main chat screen and within individual chats
+  -Search bar available on the main chat screen and within individual chats 
 
-    -Filters for narrowing results (e.g., messages, photos, videos, links)
+  -Filters for narrowing results (e.g., messages, photos, videos, links) 
+  
+  -Highlighting of matched keywords in chat results 
+  
+  2.Business Logic: 
 
-    -Highlighting of matched keywords in chat results
+  -Handles indexing of messages and media metadata on the user’s device 
 
-  2.Business Logic:
+  -Processes search queries and ranks results based on relevance or recency 
 
-    -Handles indexing of messages and media metadata on the user’s device
+  -Applies filters such as date, media type, or chat scope 
+  
+  3.Network / APIs: 
 
-    -Processes search queries and ranks results based on relevance or recency
+  -Not required for basic chat and message search 
 
-    -Applies filters such as date, media type, or chat scope
+  -Used when accessing AI-assisted search or web-based fact-checking features 
+  
+  4.Data Storage: 
+  
+  -Chat history and metadata stored in an encrypted local database on the device 
 
-  3.Network / APIs:
-
-    -Not required for basic chat and message search
-
-    -Used when accessing AI-assisted search or web-based fact-checking features
-
-  4.Data Storage:
-
-    -Chat history and metadata stored in an encrypted local database on the device
-
-    -Search operations query this local storage to retrieve results
+  -Search operations query this local storage to retrieve results 
 
 Whether the feature requires internet connectivity
 
@@ -222,6 +246,30 @@ More background processes leads to slower chats on low-end phones.
 
 Higher battery and data usage.
 
+**Why would this change be difficult to implement?**
+
+Implementing mobile payments in Uganda would be challenging due to several technical, regulatory, and user-experience constraints.
+
+a) Limited Control over USSD Infrastructure
+
+USSD-based mobile money services are controlled by telecom operators rather than application developers. As a result, WhatsApp would have limited influence over how USSD sessions behave. Additionally, USSD functionality varies across countries, mobile network operators, and device models, making consistent integration difficult.
+
+b) Security and Trust Concerns
+
+Mobile payments require extremely high levels of security to protect users from fraud and financial loss. Even a minor software flaw could lead to unauthorized transactions, resulting in financial damage, loss of user trust, and potential legal consequences for the platform.
+
+c) Regulatory and Legal Constraints
+
+Financial services are heavily regulated and differ from one country to another. To operate mobile payments in Uganda, WhatsApp would need approval and compliance with multiple regulatory bodies, including central banks, telecom regulators, and licensed payment service providers. Meeting these requirements increases development time and complexity.
+
+d) Platform and Operating System Limitations
+
+Some mobile operating systems, particularly iOS, restrict direct access to USSD functionality. In addition, not all devices allow applications to reliably initiate or manage USSD sessions, limiting compatibility across the user base.
+
+e) User Experience Risks
+
+Integrating USSD payments may require users to switch between WhatsApp and USSD interfaces, which can be confusing and disruptive. Failed or interrupted USSD sessions could reduce user confidence in the payment feature and negatively affect overall trust in the app.
+
 # Part D: Software Construction Challenges — WhatsApp
 
 1. Performance and Scalability: WhatsApp serves billions of users sending messages simultaneously.
@@ -269,4 +317,7 @@ A feature that works for 100 users can collapse under millions of concurrent use
 Large systems are built and modified by many engineers over years. If code is hard to read, tightly coupled, or poorly structured, every new change risks breaking existing functionality. Software at this scale must be written for future engineers, not just to pass today’s test.
          
 
+3. What did you learn about teamwork from this exercise?
+
+From this exercise, we learned that teamwork is important because different people have different experiences and perspectives of applications which enabled us to notice different things. Working together helped us understand the app better, share ideas, and divide tasks so the work was done faster and more accurately.
 
