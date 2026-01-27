@@ -419,9 +419,9 @@ He also handled the **Search** core feature, completing Part B by examining its 
 Additionally, he contributed to Part E, Question 1, reflecting on what surprised the group most about the complexity behind WhatsApp.
 
 
-**Name:** Denzel [Surname]  
-**Reg No:** 
-**Access Number:**  
+**Name:** Buwembo David Denzel  
+**Reg No:** S23B23/074
+**Access Number:** B25565
 Contributions:  
 He focused on the **Meta AI** core feature within WhatsApp. He analyzed how artificial intelligence is integrated into the application and contributed to **Part B** by examining the software components involved in AI-powered assistance, including user interaction, backend logic, network dependency, and privacy considerations.
 In addition, he contributed to **Part D** by addressing **AI Integration and Ethical Challenges**. Through this analysis, he highlighted that integrating AI is not only about generating intelligent responses but also about responsibility. 
