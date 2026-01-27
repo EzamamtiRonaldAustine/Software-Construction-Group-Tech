@@ -402,7 +402,7 @@ Serving as the App Analyst, she contributed to multiple sections of the project.
 
 **Name:** Kiisa Angela   
 **Reg No:** S23B23/027 
-**Access Number:**  B24258 
+**Access Number:** B24258 
 Contributions:  
 Analyzed the messaging feature in **Part B**, identifying relevant UI elements, business logic, network/API interactions, data persistence, and expected behavior under poor connectivity.
 Contributed to **Part C** by evaluating system components affected by the proposed change scenario and identifying potential feature breaks.
